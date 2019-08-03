@@ -13,7 +13,7 @@ JAVA에 대한 이해를 위한 기초적인 스터디와 주마다 정기적으
 
 # Member
 ### 팀장 강근우 - 개발, 기획
-##### 팀원 주이식 - 개발, Github 관리 
+##### 팀원 주이식 - 개발, Github 관리, 스터디 진행 
 ##### 팀원 이현주 - 개발, 서기
 ##### 팀원 이주현 - 디자인
 
@@ -36,4 +36,13 @@ JAVA에 대한 이해를 위한 기초적인 스터디와 주마다 정기적으
 -----------------------
 **T map API** - 
 <http://tmapapi.sktelecom.com/main.html#android/guide/androidGuide>
+<참고한 문서 및 사이트>
+---------------------
+**위도 경도로 주소 반환** -
+<http://blog.naver.com/PostView.nhn?blogId=robotluv1226&logNo=220851639125>
+
+<주차별 진행사항>
+----------------
+사전준비(7월 25일): 안드로이드를 위한 기초 JAVA강의 + 깃허브 강의, 어플리케이션 기획 및 개발 시 필요사항 정리
+1주차(8월 1일): 안드로이드 이벤트 처리(OnclickListener, Intent, AndroidManifest Permission주기) 및 예외처리(try catch)
 
