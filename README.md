@@ -45,7 +45,7 @@ JAVA에 대한 이해를 위한 기초적인 스터디와 주마다 정기적으
 **위도 경도로 주소 반환** -
 <http://blog.naver.com/PostView.nhn?blogId=robotluv1226&logNo=220851639125>\
 **다음 우편번호 서비스 API 사용하기** -
-<https://codeman77.tistory.com/55>
+<https://codeman77.tistory.com/55>\
 <주차별 진행사항>
 ----------------
 사전준비(7월 25일): 안드로이드를 위한 기초 JAVA강의 + 깃허브 강의, 어플리케이션 기획 및 개발 시 필요사항 정리\
