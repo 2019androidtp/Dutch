@@ -9,6 +9,7 @@ JAVA에 대한 이해를 위한 기초적인 스터디와 주마다 정기적으
 안드로이드의 기초적인 지식들을 습득하고 오픈소스를 충분히 이해할 수 있게 진행됩니다.\
 개발기간은 7월 중순부터 12월 중순까지 진행됩니다. 시험기간 2주전부터는 회의와 스터디는 진행하지 않습니다.
 
+서울시 스마트 앱 공모전에 참가합니다. <https://www.seoulappcontest.org/>\
 
 
 # Member
@@ -36,15 +37,18 @@ JAVA에 대한 이해를 위한 기초적인 스터디와 주마다 정기적으
 -----------------------
 **T map API** - 
 <http://tmapapi.sktelecom.com/main.html#android/guide/androidGuide>\
-
+**kakao 우편번호 서비스** -
+<http://postcode.map.daum.net/guide#usage>
 
 <참고한 문서 및 사이트>
 ---------------------
 **위도 경도로 주소 반환** -
 <http://blog.naver.com/PostView.nhn?blogId=robotluv1226&logNo=220851639125>\
-
+**다음 우편번호 서비스 API 사용하기** -
+<https://codeman77.tistory.com/55>
 <주차별 진행사항>
 ----------------
 사전준비(7월 25일): 안드로이드를 위한 기초 JAVA강의 + 깃허브 강의, 어플리케이션 기획 및 개발 시 필요사항 정리\
 1주차(8월 1일): 안드로이드 이벤트 처리(OnclickListener, Intent, AndroidManifest Permission주기) 및 예외처리(try catch)\
 2주차(8월 8일): Google 지도 API 사용, AndroidManifest 오류 및 SDK버전 오류 정리\
+3주차(8월 16일): Google Place API사용, 지오코딩 구현, AndroidMenifest오류 해결
