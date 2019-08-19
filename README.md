@@ -12,6 +12,7 @@ JAVA에 대한 이해를 위한 기초적인 스터디와 주마다 정기적으
 서울시 스마트 앱 공모전에 참가합니다. <https://www.seoulappcontest.org/>\
 
 
+
 # Member
 ### 팀장 강근우 - 개발, 기획
 ##### 팀원 주이식 - 개발, Github 관리, 스터디 진행 
@@ -36,7 +37,8 @@ JAVA에 대한 이해를 위한 기초적인 스터디와 주마다 정기적으
 <사용한 OPENSOURCE 목록>
 -----------------------
 **T map API** - 
-<http://tmapapi.sktelecom.com/main.html#android/guide/androidGuide>\
+<http://tmapapi.sktelecom.com/main.html#android/guide/androidGuide>
+
 **kakao 우편번호 서비스** -
 <http://postcode.map.daum.net/guide#usage>
 
@@ -53,3 +55,4 @@ JAVA에 대한 이해를 위한 기초적인 스터디와 주마다 정기적으
 1주차(8월 1일): 안드로이드 이벤트 처리(OnclickListener, Intent, AndroidManifest Permission주기) 및 예외처리(try catch)\
 2주차(8월 8일): Google 지도 API 사용, AndroidManifest 오류 및 SDK버전 오류 정리\
 3주차(8월 16일): Google Place API사용, 지오코딩 구현, AndroidMenifest오류 해결
+
