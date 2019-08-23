@@ -54,5 +54,6 @@ JAVA에 대한 이해를 위한 기초적인 스터디와 주마다 정기적으
 사전준비(7월 25일): 안드로이드를 위한 기초 JAVA강의 + 깃허브 강의, 어플리케이션 기획 및 개발 시 필요사항 정리\
 1주차(8월 1일): 안드로이드 이벤트 처리(OnclickListener, Intent, AndroidManifest Permission주기) 및 예외처리(try catch)\
 2주차(8월 8일): Google 지도 API 사용, AndroidManifest 오류 및 SDK버전 오류 정리\
-3주차(8월 16일): Google Place API사용, 지오코딩 구현, AndroidMenifest오류 해결
+3주차(8월 16일): Google Place API사용, 지오코딩 구현, AndroidMenifest오류 해결\
+4주차(8월 19일): Marker에 이벤트 구현 test, 다중마커 관련 T map API 서치, 어플리케이션 플로우 차트 
 
