@@ -3,9 +3,12 @@ package com.example.apicollaboration.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.example.apicollaboration.ListViewFunctionClass.ListViewAdapter;
 import com.example.apicollaboration.R;
@@ -33,22 +36,28 @@ public class ListViewActivity extends AppCompatActivity {
 
     for (int i = 0; i < POIitemSize; i++) {
       listViewAdapter.addItem(POIResult[i], AddressResult[i], POILat[i], POILon[i]);
+
+      Log.d("RESULT", "POIResult" + POIResult[i] + "AddressResult" + AddressResult[i] +"POILat" + POILat[i] + " POILon" + POILon[i]);
     } // 어답터에 주소의 이름과 상세주소, 위도 경도 추가
     AddressListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
       @Override
       public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
 
-        Intent MarkIntent = new Intent(getApplicationContext(), AddressMarkActivity.class);
-        MarkIntent.putExtra("LvLat", POILat[position]); // 선택한 postion에 따른 위도 경도를 인텐트로 넘겨줌
+        Intent MarkIntent = new Intent(getApplicationContext(),AddressMarkActivity.class);
+        MarkIntent.putExtra("LvLat", POILat[position]); // 선택한 postion 에 따른 위도 경도를 인텐트로 넘겨줌
         MarkIntent.putExtra("LvLon", POILon[position]);
+        MarkIntent.putExtra("LvName", POIResult[position]);
+
+        Log.d("Select1", "선택결과" + "POIResult" + POIResult[position] + "LvLat" + POILat[position] +"LvLon" +POILon[position]);
 
         startActivity(MarkIntent);
 
-        // Log.d("Position", "Position : " + position);
       }
     });
 
   }
+
+
 }
 
