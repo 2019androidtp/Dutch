@@ -21,6 +21,7 @@ import static com.example.apicollaboration.Activity.MainActivity.POIitemSize;
 
 public class ListViewActivity extends AppCompatActivity {
 
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -37,7 +38,7 @@ public class ListViewActivity extends AppCompatActivity {
     for (int i = 0; i < POIitemSize; i++) {
       listViewAdapter.addItem(POIResult[i], AddressResult[i], POILat[i], POILon[i]);
 
-      Log.d("RESULT", "POIResult" + POIResult[i] + "AddressResult" + AddressResult[i] +"POILat" + POILat[i] + " POILon" + POILon[i]);
+      Log.d("RESULT", "Log - POIResult" + POIResult[i] + "AddressResult" + AddressResult[i] +"POILat" + POILat[i] + " POILon" + POILon[i]);
     } // 어답터에 주소의 이름과 상세주소, 위도 경도 추가
     AddressListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
       @Override
@@ -45,10 +46,10 @@ public class ListViewActivity extends AppCompatActivity {
 
 
         Intent MarkIntent = new Intent(getApplicationContext(),AddressMarkActivity.class);
-        MarkIntent.putExtra("LvLat", POILat[position]); // 선택한 postion 에 따른 위도 경도를 인텐트로 넘겨줌
-        MarkIntent.putExtra("LvLon", POILon[position]);
-        MarkIntent.putExtra("LvName", POIResult[position]);
-
+        MarkIntent.putExtra("Log - LvLat", POILat[position]); // 선택한 postion 에 따른 위도 경도를 인텐트로 넘겨줌
+        MarkIntent.putExtra("Log - LvLon", POILon[position]);
+        MarkIntent.putExtra("Log - LvName", POIResult[position]);
+        //MarkIntent.putExtra("PlaceNum", PlaceNum);
         Log.d("Select1", "선택결과" + "POIResult" + POIResult[position] + "LvLat" + POILat[position] +"LvLon" +POILon[position]);
 
         startActivity(MarkIntent);

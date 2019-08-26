@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.example.apicollaboration.R;
 import com.skt.Tmap.TMapData;
+import com.skt.Tmap.TMapMarkerItem;
 import com.skt.Tmap.TMapPOIItem;
 import com.skt.Tmap.TMapView;
 
@@ -29,7 +30,16 @@ public class MainActivity extends AppCompatActivity {
     static double POILon[]= new double[100];
     private String MarkName;
     private TextView mTextView;
+    private int PlaceNum;
     static String DaumAddressResult= null;
+
+    //from git
+    private static int mMarkerID;
+    private ArrayList<String> mArrayMarkerID = new ArrayList<String>();
+    private ArrayList<TMapMarkerItem> m_mapMarkerItem = new ArrayList<TMapMarkerItem>();
+    //
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,25 +50,32 @@ public class MainActivity extends AppCompatActivity {
         tMapView.setSKTMapApiKey( "f8e29016-57fd-4d05-b929-ebf16128f93f" ); // api key 설정
 
         MarkName = getIntent().getStringExtra("LvName");
+
+
         Log.d("Main", "Log - MarkName" + MarkName);
         mTextView = findViewById (R.id.textView1);
         mTextView.setText(MarkName);
 
         Log.d("mTextView", "Log - " + MarkName);
 
-      findAddressbtn.setOnClickListener(new View.OnClickListener() {
-          @Override
-          public void onClick(View v) {
-          convertTodAddress(); // 주소 검색 다이얼로그 띄우는 메소드 호출
-        }
+
+        findAddressbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                convertTodAddress(); // 주소 검색 다이얼로그 띄우는 메소드 호출
+            }
         });
-      DaumfindAddressBtn.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-          Intent DaumSearchIntent = new Intent(getApplicationContext(),DaumSearchActivity.class);
-          startActivity(DaumSearchIntent);
-        }
-      });
+        // 여기 밑은 짜피 필요없음
+        DaumfindAddressBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent DaumSearchIntent = new Intent(getApplicationContext(), DaumSearchActivity.class);
+                DaumSearchIntent.putExtra("PlaceNum", PlaceNum);
+                startActivity(DaumSearchIntent);
+            }
+        });
+
+
     }
 
 
@@ -90,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("POI testing", "Log - POI 검색결과: "+ POIResult[i] +" "+ AddressResult[i] + POILat[i] + "" + POILon[i] + "\n" );
 
                 Intent ListViewIntent = new Intent(getApplicationContext(), ListViewActivity.class);
+                ListViewIntent.putExtra("PlaceNum", PlaceNum);
                 startActivity(ListViewIntent); // 리스트뷰 띄우는 액티비티로 이동
               }
 

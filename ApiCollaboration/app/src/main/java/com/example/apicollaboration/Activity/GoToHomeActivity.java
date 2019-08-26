@@ -27,7 +27,7 @@ import org.w3c.dom.Text;
 import java.util.ArrayList;
 
 public class GoToHomeActivity extends AppCompatActivity {
-
+    private int PlaceNum;
     private String MarkName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

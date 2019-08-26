@@ -40,5 +40,11 @@
             android:layout_height="match_parent"
             android:visibility="visible"
             android:text="@string/test_txt3" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:text="PlaceNum" />
     </LinearLayout>
 </LinearLayout>
