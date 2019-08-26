@@ -15,88 +15,90 @@ import android.widget.TextView;
 import com.example.apicollaboration.R;
 
 public class DaumSearchActivity extends AppCompatActivity {
-  private WebView daum_webView;
+	private WebView daum_webView;
 
-  private TextView daum_result;
+	private TextView daum_result;
 
-  private Handler handler;
-  @Override
-  protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_main);
+	private Handler handler;
 
-    daum_result = (TextView) findViewById(R.id.daum_result);
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
 
-
-    // WebView 초기화
-
-    init_webView();
+		daum_result = (TextView) findViewById(R.id.daum_result);
 
 
-    // 핸들러를 통한 JavaScript 이벤트 반응
+		// WebView 초기화
 
-    handler = new Handler();
-
-
-  }
-  public void init_webView() {
-
-    // WebView 설정
-
-    daum_webView = (WebView) findViewById(R.id.daum_webview);
+		init_webView();
 
 
-    // JavaScript 허용
+		// 핸들러를 통한 JavaScript 이벤트 반응
 
-    daum_webView.getSettings().setJavaScriptEnabled(true);
-
-
-    // JavaScript의 window.open 허용
-
-    daum_webView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
+		handler = new Handler();
 
 
-    // JavaScript이벤트에 대응할 함수를 정의 한 클래스를 붙여줌
+	}
 
-    daum_webView.addJavascriptInterface(new AndroidBridge(), "TestApp");
+	public void init_webView() {
 
+		// WebView 설정
 
-    // web client 를 chrome 으로 설정
-
-    daum_webView.setWebChromeClient(new WebChromeClient());
-
-
-    // webview url load. php 파일 주소
-
-    daum_webView.loadUrl("http://jkey20.cafe24.com/SearchAddress.php");
-
-  }
+		daum_webView = (WebView) findViewById(R.id.daum_webview);
 
 
-  private class AndroidBridge {
+		// JavaScript 허용
 
-    @JavascriptInterface
+		daum_webView.getSettings().setJavaScriptEnabled(true);
 
-    public void setAddress(final String arg1, final String arg2, final String arg3) {
 
-      handler.post(new Runnable() {
+		// JavaScript의 window.open 허용
 
-        @Override
+		daum_webView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
 
-        public void run() {
 
-          daum_result.setText(String.format("(%s) %s %s", arg1, arg2, arg3));
+		// JavaScript이벤트에 대응할 함수를 정의 한 클래스를 붙여줌
 
-          // WebView를 초기화 하지않으면 재사용할 수 없음
+		daum_webView.addJavascriptInterface(new AndroidBridge(), "TestApp");
 
-          init_webView();
 
-        }
+		// web client 를 chrome 으로 설정
 
-      });
+		daum_webView.setWebChromeClient(new WebChromeClient());
 
-    }
 
-  }
+		// webview url load. php 파일 주소
+
+		daum_webView.loadUrl("http://jkey20.cafe24.com/SearchAddress.php");
+
+	}
+
+
+	private class AndroidBridge {
+
+		@JavascriptInterface
+
+		public void setAddress(final String arg1, final String arg2, final String arg3) {
+
+			handler.post(new Runnable() {
+
+				@Override
+
+				public void run() {
+
+					daum_result.setText(String.format("(%s) %s %s", arg1, arg2, arg3));
+
+					// WebView를 초기화 하지않으면 재사용할 수 없음
+
+					init_webView();
+
+				}
+
+			});
+
+		}
+
+	}
 
 }
