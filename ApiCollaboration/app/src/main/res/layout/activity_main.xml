@@ -20,6 +20,26 @@
         android:layout_height="100dp"
         android:id="@+id/searchDaumBtn"
         android:text="다음주소로 검색"/>
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/searchAllMarkerBtn"
+                android:text="모든마커 검색"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="주소를 찾아주세요!"
+            android:id="@+id/addressSetView"
+        />
+        <ListView
+                android:id="@+id/Addresslistview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+        </ListView>
     </LinearLayout>
 
 
