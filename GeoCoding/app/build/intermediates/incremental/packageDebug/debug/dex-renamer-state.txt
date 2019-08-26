@@ -1,0 +1,10 @@
+#Thu Aug 08 16:43:43 KST 2019
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.2=C\:\\CookAndroid\\Project\\GeoCoding\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+base.1=C\:\\CookAndroid\\Project\\GeoCoding\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\18
+base.0=C\:\\CookAndroid\\Project\\GeoCoding\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+file.2=C\:\\CookAndroid\\Project\\GeoCoding\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10\\classes2.dex
+file.1=C\:\\CookAndroid\\Project\\GeoCoding\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\18\\classes.dex
+file.0=C\:\\CookAndroid\\Project\\GeoCoding\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10\\classes.dex
