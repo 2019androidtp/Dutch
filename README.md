@@ -53,6 +53,8 @@ JAVA에 대한 이해를 위한 기초적인 스터디와 주마다 정기적으
 https://community.openapi.sk.com/t/tmap/6715
 ###### 네비게이션 드로어 사용 -
 https://liveonthekeyboard.tistory.com/entry/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EB%84%A4%EB%B9%84%EA%B2%8C%EC%9D%B4%EC%85%98-%EB%93%9C%EB%A1%9C%EC%96%B4-Navigation-drawer-%EC%82%AC%EC%9A%A9%EB%B2%95
+
+
 <주차별 진행사항>
 ----------------
 사전준비(7월 25일): 안드로이드를 위한 기초 JAVA강의 + 깃허브 강의, 어플리케이션 기획 및 개발 시 필요사항 정리\
