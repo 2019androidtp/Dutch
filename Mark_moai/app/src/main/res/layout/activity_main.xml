@@ -20,7 +20,12 @@
         android:layout_height="100dp"
         android:id="@+id/searchDaumBtn"
         android:text="다음주소로 검색"/>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/saved_list">
+    </ListView>
     </LinearLayout>
-
-
 </LinearLayout>

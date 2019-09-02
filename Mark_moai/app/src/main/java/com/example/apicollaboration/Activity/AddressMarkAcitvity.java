@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.apicollaboration.R;
@@ -23,6 +24,8 @@ import com.skt.Tmap.TMapPOIItem;
 import com.skt.Tmap.TMapPoint;
 import com.skt.Tmap.TMapView;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,6 +34,10 @@ import static com.example.apicollaboration.Activity.array_saving_class.alTMapPoi
 public class AddressMarkAcitvity extends AppCompatActivity{
   public static ArrayList<TMapPoint> pointOfAll = new ArrayList<TMapPoint>();
   public static List<TMapMarkerItem> markerItem1 = new ArrayList<>();
+  TextView address_textView;
+  TextView name_textView;
+  Button yesBtn;
+  Button noBtn;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +45,8 @@ public class AddressMarkAcitvity extends AppCompatActivity{
     setContentView(R.layout.activity_address_mark_acitvity);
     LinearLayout linearLayoutTmap = (LinearLayout) findViewById(R.id.mapview);
     TMapView tMapView = new TMapView(this);
+    name_textView = (TextView) findViewById(R.id.nameOfLocation);
+    address_textView = (TextView) findViewById(R.id.nameOfAddress);
 
     tMapView.setSKTMapApiKey("f8e29016-57fd-4d05-b929-ebf16128f93f"); // api key 설정
     linearLayoutTmap.addView(tMapView);
@@ -46,7 +55,6 @@ public class AddressMarkAcitvity extends AppCompatActivity{
 
     Bitmap temp = BitmapFactory.decodeResource(this.getResources(), R.mipmap.ic_launcher);
     ArrayList<String> id_marker = new ArrayList<>();
-
 
 
     for (int i = 0; i < alTMapPoint.size(); i++) {
@@ -66,7 +74,35 @@ public class AddressMarkAcitvity extends AppCompatActivity{
       id_marker.add("marker" + i);
     }
 
+    address_textView.setText(array_saving_class.addressOfIt.get(array_saving_class.addressOfIt.size() - 1));
+    name_textView.setText(array_saving_class.nameOfIt.get(array_saving_class.nameOfIt.size() - 1));
+
+    tMapView.setCenterPoint(alTMapPoint.get(alTMapPoint.size() - 1).getLongitude(), alTMapPoint.get(alTMapPoint.size() - 1).getLatitude());
+
+    yesBtn = (Button) findViewById(R.id.yesBtn);
+    noBtn = (Button) findViewById(R.id.noBtn);
+
+    yesBtn.setOnClickListener(new Button.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        array_saving_class.final_location.add(array_saving_class.nameOfIt.get(array_saving_class.addressOfIt.size() - 1));
+        array_saving_class.final_Point.add(new TMapPoint(alTMapPoint.get(alTMapPoint.size() - 1).getLongitude(), alTMapPoint.get(alTMapPoint.size() - 1).getLatitude()));
+        Intent goToMain = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(goToMain);
+      }
+    });
+
+    noBtn.setOnClickListener(new Button.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        array_saving_class.addressOfIt.remove(array_saving_class.addressOfIt.get(array_saving_class.addressOfIt.size() - 1));
+        alTMapPoint.remove(alTMapPoint.get(alTMapPoint.size() - 1));
+        Intent goToMain = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(goToMain);
+      }
+    });
 
   }
 
 }
+
