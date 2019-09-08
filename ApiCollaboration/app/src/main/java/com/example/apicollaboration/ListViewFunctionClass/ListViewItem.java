@@ -6,6 +6,9 @@ public class ListViewItem {
   private String AddressStr ;
   private double POIlat;
   private double POIlon;
+  private int icon;
+  private String name;
+
   public void setPOIStr(String title) {
     POIStr = title ;
   }
@@ -30,4 +33,12 @@ public class ListViewItem {
   public double getLon(){
     return this.POIlon;
   }
+  public int getIcon(){return icon;}
+  public String getName(){return name;}
+
+  public ListViewItem(){
+    this.icon=icon;
+    this.name=name;
+  }
+
 }

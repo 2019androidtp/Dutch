@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="124dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/orangecorner" />
+
+
+        <Button
+            android:id="@+id/nameA"
+            android:layout_width="48dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="10.7dp"
+            android:layout_marginTop="134.7dp"
+            android:background="@drawable/radiusblack"
+            tools:text="A"
+            android:textColor="@color/white"
+             />
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="165.3dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="134.7dp"
+            android:background="@drawable/radiuswhite"
+            android:text="주소로 검색" />
+
+        <Button
+            android:id="@+id/nameB"
+            android:layout_width="48dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="10.7dp"
+            android:layout_marginTop="172dp"
+            android:background="@drawable/radiusblack"
+            tools:text="B"
+            android:textColor="@color/white"
+             />
+
+        <Button
+            android:id="@+id/searchDaumBtn"
+            android:layout_width="165.3dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="172dp"
+            android:background="@drawable/radiuswhite"
+            android:text="다음주소로 검색" />
+
+        <Button
+            android:id="@+id/nameC"
+            android:layout_width="48dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="10.7dp"
+            android:layout_marginTop="209.3dp"
+            android:background="@drawable/radiusblack"
+            tools:text="C"
+            android:textColor="@color/white"
+             />
+
+        <Button
+            android:id="@+id/searchAllMarkerBtn"
+            android:layout_width="165.3dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="209.3dp"
+            android:background="@drawable/radiuswhite"
+            android:text="모든마커 검색" />
+
+
+        <!--
+        <TextView
+            android:id="@+id/addressSetView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="주소를 찾아주세요!" />
+        -->
+        <!--
+        <ListView
+            android:id="@+id/Addresslistview"
+            android:layout_width="match_parent"
+            android:layout_height="594dp">
+
+        </ListView>
+        -->
+    </FrameLayout>
+
+
+</LinearLayout>

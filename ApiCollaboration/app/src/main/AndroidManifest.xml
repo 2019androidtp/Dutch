@@ -10,7 +10,7 @@
             android:label="@string/app_name"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme.NoActionBar">
         <activity
                 android:name=".Activity.SearchAllMarkerActivity"
                 android:label="@string/title_activity_search_all_marker"
@@ -20,7 +20,7 @@
                 android:name=".Activity.DaumSearchActivity"
                 android:label="@string/title_activity_daum_search"
                 android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Activity.AddressMarkAcitvity"/>
+        <activity android:name=".Activity.AddressMarkActivity"/>
         <activity
                 android:name=".Activity.ListViewActivity"
                 android:label="@string/title_activity_list_view"

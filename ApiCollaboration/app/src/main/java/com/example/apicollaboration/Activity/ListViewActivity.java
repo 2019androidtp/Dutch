@@ -39,7 +39,7 @@ public class ListViewActivity extends AppCompatActivity {
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
 				Address = POIResult[position];
-				Intent MarkIntent = new Intent(getApplicationContext(), AddressMarkAcitvity.class);
+				Intent MarkIntent = new Intent(getApplicationContext(), AddressMarkActivity.class);
 				MarkIntent.putExtra("LvLat", POILat[position]); // 선택한 postion에 따른 위도 경도를 인텐트로 넘겨줌
 				MarkIntent.putExtra("LvLon", POILon[position]);
 				MarkIntent.putExtra("LvAddress", POIResult[position]); // 선택한 position에 따른 주소를 인텐트로 넘겨줌
