@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:font="@font/nanumgothic"
+            android:text="주소로 검색" />
+
+        <Button
+            android:id="@+id/searchDaumBtn"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="다음주소로 검색" />
+
+        <Button
+            android:id="@+id/searchAllMarkerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="모든마커 검색" />
+
+
+        <TextView
+            android:id="@+id/addressSetView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="주소를 찾아주세요!" />
+
+        <ListView
+            android:id="@+id/Addresslistview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+    </LinearLayout>
+
+
+</LinearLayout>
