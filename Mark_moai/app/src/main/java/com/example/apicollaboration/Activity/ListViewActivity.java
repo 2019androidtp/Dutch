@@ -40,6 +40,8 @@ public class ListViewActivity extends AppCompatActivity {
           public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             TMapPoint temp = new TMapPoint(POILat[position],POILon[position]);
             array_saving_class.alTMapPoint.add(temp);
+            array_saving_class.nameOfIt.add(POIResult[position]);
+            array_saving_class.addressOfIt.add(AddressResult[position]);
             Intent MarkIntent = new Intent(getApplicationContext(),AddressMarkAcitvity.class);
           startActivity(MarkIntent);
         // Log.d("Position", "Position : " + position);

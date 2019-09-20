@@ -7,9 +7,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 
+import com.example.apicollaboration.ListViewFunctionClass.ListViewAdapter;
 import com.example.apicollaboration.R;
 import com.skt.Tmap.TMapData;
 import com.skt.Tmap.TMapPOIItem;
@@ -29,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
     static double POILat[]= new double[100];
     static double POILon[]= new double[100];
     static String DaumAddressResult= null;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +56,16 @@ public class MainActivity extends AppCompatActivity {
             startActivity(DaumSearchIntent);
         }
       });
+
+        //
+        //
+        final ListView final_list;
+        final_list = (ListView) findViewById(R.id.saved_list);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,
+                array_saving_class.final_location);
+
+        final_list.setAdapter(adapter); // 리스트뷰에 어답터 연결
+
     }
 
   public void convertTodAddress() {
