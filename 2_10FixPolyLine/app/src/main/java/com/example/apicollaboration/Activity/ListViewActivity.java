@@ -16,9 +16,10 @@ import static com.example.apicollaboration.Activity.MainActivity.POILat;
 import static com.example.apicollaboration.Activity.MainActivity.POILon;
 import static com.example.apicollaboration.Activity.MainActivity.POIResult;
 import static com.example.apicollaboration.Activity.MainActivity.POIitemSize;
+import static com.example.apicollaboration.Activity.array_saving_class.POIName;
 
 public class ListViewActivity extends AppCompatActivity {
-
+  int size = 0;
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -42,6 +43,8 @@ public class ListViewActivity extends AppCompatActivity {
             array_saving_class.alTMapPoint.add(temp);
             array_saving_class.nameOfIt.add(POIResult[position]);
             array_saving_class.addressOfIt.add(AddressResult[position]);
+            POIName[size] = POIResult[position];
+            size++;
             Intent MarkIntent = new Intent(getApplicationContext(),AddressMarkAcitvity.class);
           startActivity(MarkIntent);
         // Log.d("Position", "Position : " + position);

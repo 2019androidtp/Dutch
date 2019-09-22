@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button DaumfindAddressBtn = (Button)findViewById(R.id.searchDaumBtn);
+
         Button findAddressbtn = (Button)findViewById(R.id.searchBtn);
 
 
@@ -47,17 +47,20 @@ public class MainActivity extends AppCompatActivity {
         findCenterBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                for(int i = 0 ; i<   array_saving_class.final_Point.size() ; i++){
+                for(int i = 0 ; i < array_saving_class.final_Point.size() ; i++){
                    array_saving_class.tempX += array_saving_class.final_Point.get(i).getLatitude();
                     array_saving_class.tempY += array_saving_class.final_Point.get(i).getLongitude();
-                    }
 
-                array_saving_class.center_point.setLatitude( array_saving_class.tempX/ array_saving_class.final_Point.size());
+                  array_saving_class.recent_point.setLatitude(array_saving_class.final_Point.get(i).getLatitude());
+                  array_saving_class.recent_point.setLongitude(array_saving_class.final_Point.get(i).getLongitude());
+                }
+
+               array_saving_class.center_point.setLatitude( array_saving_class.tempX/ array_saving_class.final_Point.size());
                 array_saving_class.center_point.setLongitude( array_saving_class.tempY/ array_saving_class.final_Point.size());
 
                 array_saving_class.tempX = array_saving_class.tempY = 0;
                 array_saving_class.centerOfIt = true;
-
+               // array_saving_class.alTMapPoint.add(array_saving_class.center_point);
                 Intent letsGoToCenterPoint = new Intent(getApplicationContext(),AddressMarkAcitvity.class);
                 startActivity(letsGoToCenterPoint);
 
@@ -70,22 +73,14 @@ public class MainActivity extends AppCompatActivity {
         TMapView tMapView = new TMapView(this); // key값 설정을 위한 tmapView 생성
         tMapView.setSKTMapApiKey( "f8e29016-57fd-4d05-b929-ebf16128f93f" ); // api key 설정
 
-      findAddressbtn.setOnClickListener(new View.OnClickListener() {
+         findAddressbtn.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View v) {
           convertTodAddress(); // 주소 검색 다이얼로그 띄우는 메소드 호출
         }
         });
-      DaumfindAddressBtn.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-          Intent DaumSearchIntent = new Intent(getApplicationContext(),DaumSearchActivity.class);
-            startActivity(DaumSearchIntent);
-        }
-      });
 
-        //
-        //
+
         final ListView final_list;
         final_list = (ListView) findViewById(R.id.saved_list);
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,
