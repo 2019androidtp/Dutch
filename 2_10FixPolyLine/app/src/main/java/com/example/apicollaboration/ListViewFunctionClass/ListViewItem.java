@@ -24,10 +24,5 @@ public class ListViewItem {
   public  void setLon(double lon){
     POIlon = lon;
   }
-  public double getLat(){
-    return this.POIlat;
-  }
-  public double getLon(){
-    return this.POIlon;
-  }
+
 }

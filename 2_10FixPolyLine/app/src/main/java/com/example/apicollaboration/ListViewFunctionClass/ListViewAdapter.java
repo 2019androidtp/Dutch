@@ -12,6 +12,7 @@ import com.example.apicollaboration.R;
 import java.util.ArrayList;
 
 public class ListViewAdapter extends BaseAdapter {
+
   // Adapter에 추가된 데이터를 저장하기 위한 ArrayList
   private ArrayList<ListViewItem> listViewItemList = new ArrayList<ListViewItem>() ;
 
@@ -77,9 +78,4 @@ public class ListViewAdapter extends BaseAdapter {
     listViewItemList.add(item);
   }
 
-  public void getLvLat(int position){
-  }
-  public void getLvLon(int position){
-
-  }
 }

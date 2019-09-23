@@ -42,8 +42,7 @@ import static com.example.apicollaboration.Activity.array_saving_class.POIName;
 import static com.example.apicollaboration.Activity.array_saving_class.alTMapPoint;
 
 public class AddressMarkAcitvity extends AppCompatActivity {
-  public static ArrayList<TMapPoint> pointOfAll = new ArrayList<TMapPoint>();
-  public static List<TMapMarkerItem> markerItem1 = new ArrayList<>();
+
   TMapView tMapView;
   TextView address_textView;
   TextView name_textView;
@@ -52,8 +51,10 @@ public class AddressMarkAcitvity extends AppCompatActivity {
   Bitmap bitmap;
   Bitmap temp;
   TMapPoint centerP;
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
+
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_address_mark_acitvity);
     LinearLayout linearLayoutTmap = (LinearLayout) findViewById(R.id.mapview);
@@ -61,14 +62,12 @@ public class AddressMarkAcitvity extends AppCompatActivity {
     name_textView = (TextView) findViewById(R.id.nameOfLocation);
     address_textView = (TextView) findViewById(R.id.nameOfAddress);
 
-    tMapView.setSKTMapApiKey("f8e29016-57fd-4d05-b929-ebf16128f93f"); // api key 설정
+    //tMapView.setSKTMapApiKey("f8e29016-57fd-4d05-b929-ebf16128f93f"); // api key 설정
     linearLayoutTmap.addView(tMapView);
 
     bitmap = BitmapFactory.decodeResource(this.getResources(), R.drawable.ic_assistant_photo_black_24dp);
 
     temp = BitmapFactory.decodeResource(this.getResources(), R.mipmap.ic_launcher);
-    ArrayList<String> id_marker = new ArrayList<>();
-    ArrayList<String> id_marker_final = new ArrayList<>();
 
     markReturn();
 
@@ -83,9 +82,6 @@ public class AddressMarkAcitvity extends AppCompatActivity {
     else{
         // getLatitude랑 getLongitude부분이 반대로 적혀있음. 수정해야함.
         tMapView.setCenterPoint(array_saving_class.center_point.getLatitude(), array_saving_class.center_point.getLongitude());
-        Log.d("test", "centerLat : " + array_saving_class.center_point.getLatitude());
-        Log.d("test", "centerLon : " + array_saving_class.center_point.getLongitude());
-
 
         TMapMarkerItem center = new TMapMarkerItem();
         centerP = new TMapPoint(array_saving_class.center_point.getLongitude(), array_saving_class.center_point.getLatitude());
@@ -95,19 +91,19 @@ public class AddressMarkAcitvity extends AppCompatActivity {
         center.setCalloutSubTitle("중간지점 입니다."); // 풍선뷰 보조메시지 설정
         center.setCalloutTitle("중간지점 "); // 풍선뷰 제목 설정
         center.setCalloutRightButtonImage(temp); // 풍선뷰 오른쪽 이미지 설정
-
         center.setAutoCalloutVisible(true); // 풍선뷰 자동 활성화
+
         // 마커의 좌표 지정
         center.setTMapPoint(centerP); // 마커 위,경도 설정
         center.setVisible(TMapMarkerItem.VISIBLE); // 아이콘 보이게
         //지도에 마커 추가
         tMapView.addMarkerItem("markerItem", center);
 
-
         // 중간지점에 자동차경로 추가
         drawline();
 
-        }
+    }
+
         yesBtn = (Button) findViewById(R.id.yesBtn);
         noBtn = (Button) findViewById(R.id.noBtn);
 
@@ -132,7 +128,7 @@ public class AddressMarkAcitvity extends AppCompatActivity {
         });
         // 중간지점 체크 후 테스트를 위해 yes no 버튼을 빼놨습니다. 수정해야합니다.
 
-    }
+  }
 
   // 자동차 경로 호출시 외부에서 Thread를 통해서 호출해줘야 정상적으로 실행
 
@@ -142,6 +138,7 @@ public class AddressMarkAcitvity extends AppCompatActivity {
       @Override public void run() {
          try {
            for(int i=0; i< alTMapPoint.size(); i++) {
+
              TMapPolyLine tMapPolyLine = new TMapData().findPathData(alTMapPoint.get(i), centerP);
              tMapPolyLine.setLineColor(Color.BLUE);
              tMapPolyLine.setLineWidth(2);
@@ -149,14 +146,16 @@ public class AddressMarkAcitvity extends AppCompatActivity {
 
            }
 
-        }catch(Exception e) {
+         }catch(Exception e) {
           e.printStackTrace();
-        }
+         }
       }
     }).start();
 
   }
+
   public void markReturn() {
+
     for (int i = 0; i < alTMapPoint.size(); i++) {
 
       TMapMarkerItem markerItem1 = new TMapMarkerItem();
@@ -177,5 +176,10 @@ public class AddressMarkAcitvity extends AppCompatActivity {
     }
   }
 
+  @Override
+  public void onBackPressed() {
+    Intent backMainIntent = new Intent(getApplicationContext(), MainActivity.class);
+    startActivity(backMainIntent);
+  }
 }
 
