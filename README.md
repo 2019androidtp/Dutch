@@ -1,7 +1,6 @@
-2019androidTP 
-------------
-![project_start_date](https://img.shields.io/badge/Project%20Start%20Date-2019--07--25-informational.svg)
-=============
+# 2019androidTP  
+![project_start_date](https://img.shields.io/badge/Project%20Start%20Date-2019--07--25-informational.svg)  
+
 ***
 <2019androidTeamProject - Interface Programming Exhibition>
 ***
