@@ -8,18 +8,22 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+<!--
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
     </style>
-
+-->
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
 <!-- font 에도 있는 style-->
     <style name="ButtonWhite">
-        <item name="android:gravity">center_horizontal</item>
+        <item name="android:gravity">center</item>
         <item name="android:textSize">13.3sp</item>
         <item name="android:lineSpacingExtra">2sp</item>
         <item name="android:textColor">#ffffff</item>
