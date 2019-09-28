@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
 		Button findAddressbtn = (Button)findViewById(R.id.searchBtn);
 		Button findCenterBtn = (Button)findViewById(R.id.searchAllMarkerBtn);
 
+
 		TMapView tMapView = new TMapView(this); // key값 설정을 위한 tmapView 생성
 		tMapView.setSKTMapApiKey( "f8e29016-57fd-4d05-b929-ebf16128f93f" ); // api key 설정
 

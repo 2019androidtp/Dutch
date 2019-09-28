@@ -83,7 +83,7 @@ public class AddressMarkActivity extends AppCompatActivity {
 		}
 
 		yesBtn = (Button) findViewById(R.id.yesBtn);
-		noBtn = (Button) findViewById(R.id.noBtn);
+		//noBtn = (Button) findViewById(R.id.noBtn);
 
 		yesBtn.setOnClickListener(new Button.OnClickListener() {
 			@Override

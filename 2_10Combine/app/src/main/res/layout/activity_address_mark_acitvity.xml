@@ -11,11 +11,11 @@
         android:id="@+id/mapview"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:background="@android:color/white"
         android:layout_weight="1">
-
     </LinearLayout>
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="200dp">
@@ -26,12 +26,14 @@
 
             <TextView
                 android:id="@+id/nameOfLocation"
+                style="@style/Location"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20pt" />
 
             <TextView
                 android:id="@+id/nameOfAddress"
+                style="@style/Location"
                 android:layout_width="192dp"
                 android:layout_height="68dp"
                 android:layout_below="@id/nameOfLocation"
@@ -40,20 +42,26 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/underLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/underLayout">
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true">
 
             <Button
                 android:id="@+id/yesBtn"
+                style="@style/Location"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginRight="18dp"
-                android:layout_marginBottom="20dp"
-                android:layout_toLeftOf="@id/noBtn"
-                android:text="Yes" />
+                android:layout_marginStart="110dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="350dp"
+                android:background="@drawable/orangebar"
+                android:text="중간 지점 찾기" />
 
+
+
+            <!--
             <Button
                 android:id="@+id/noBtn"
                 android:layout_width="wrap_content"
@@ -66,6 +74,7 @@
                 android:layout_marginRight="14dp"
                 android:layout_marginBottom="20dp"
                 android:text="No" />
+                -->
         </RelativeLayout>
     </FrameLayout>
 </LinearLayout>

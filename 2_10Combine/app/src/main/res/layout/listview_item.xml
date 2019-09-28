@@ -10,6 +10,7 @@
             android:id="@+id/imageView"
             android:layout_width="20dp"
             android:layout_height="20dp"
+            android:layout_marginStart="14dp"
             android:layout_marginLeft="14dp"
             android:src="@drawable/pin"/>
 
@@ -24,9 +25,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="New Text"
+            android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
             style="@style/SearchResult"
-
             />
 
         <TextView
@@ -34,6 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="New Text"
+            android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
             style="@style/SearchResult"
             android:textColor="@color/orange"
