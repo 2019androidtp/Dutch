@@ -46,11 +46,19 @@ public class ListViewActivity extends AppCompatActivity {
             POIName[size] = POIResult[position];
             size++;
             Intent MarkIntent = new Intent(getApplicationContext(),AddressMarkAcitvity.class);
-          startActivity(MarkIntent);
-        // Log.d("Position", "Position : " + position);
-      }
+            startActivity(MarkIntent);
+
+          }
     });
 
   }
+
+  @Override
+  public void onBackPressed() {
+      Intent backMainIntent = new Intent(getApplicationContext(), MainActivity.class);
+      startActivity(backMainIntent);
+      finish();
+  }
+
 }
 
