@@ -9,7 +9,10 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dab778b-1f91-484f-8a75-27b7262e73b2" name="Default Changelist" comment="" />
+    <list default="true" id="8dab778b-1f91-484f-8a75-27b7262e73b2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../2_10FixPolyLine/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../2_10FixPolyLine/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10FixPolyLine/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../2_10FixPolyLine/.idea/misc.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +32,13 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/app.iml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -64,8 +73,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="851" />
-    <option name="y" value="147" />
+    <option name="x" value="850" />
+    <option name="y" value="146" />
     <option name="width" value="980" />
     <option name="height" value="710" />
   </component>
@@ -75,6 +84,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -91,14 +102,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$" />
     <property name="device.picker.selection" value="05157df5e10dd91a" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Mark_2_10" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../2_10FixPolyLine" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -233,6 +242,7 @@
       </method>
     </configuration>
     <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <properties />
       <listeners />
@@ -256,6 +266,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.11037674" />
@@ -329,27 +340,9 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_list_view.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/listview_item.xml" />
-    <entry file="file://$USER_HOME$/sources/android-28/android/widget/AdapterView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="341" column="23" selection-start-line="341" selection-start-column="23" selection-end-line="341" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/sources/android-28/android/widget/AbsListView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="6734" selection-start-line="6734" selection-end-line="6734" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/sources/android-28/android/os/Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="750" selection-start-line="750" selection-end-line="750" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/sources/android-28/android/widget/AdapterView.java" />
+    <entry file="file://$USER_HOME$/sources/android-28/android/widget/AbsListView.java" />
+    <entry file="file://$USER_HOME$/sources/android-28/android/os/Handler.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_daum_search.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_list_view.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_search_all_marker.xml" />
@@ -365,6 +358,9 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/apicollaboration/Activity/MainActivity.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/apicollaboration/Activity/SearchAllMarkerActivity.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+    <entry file="file://$PROJECT_DIR$/app/app.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
