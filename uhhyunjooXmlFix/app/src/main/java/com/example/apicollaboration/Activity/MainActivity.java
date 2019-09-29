@@ -1,7 +1,10 @@
 package com.example.apicollaboration.Activity;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Build;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -19,18 +22,27 @@ import java.util.ArrayList;
 // 이 액티비티의 역할: 주소로 검색 버튼을 눌렀을 때 주소를 검색하는 창이 나오고 검색한 문자열을 통해 실제 주소지를 검색하고 다음 액티비티로 넘겨줌
 
 public class MainActivity extends AppCompatActivity {
+
 	static int POIitemSize;
 	static String POIResult[] = new String[100];
 	static String AddressResult[] = new String[100];
 	static double POILat[]= new double[100];
 	static double POILon[]= new double[100];
-
+//	Button[] DynamicAddBtn = new Button[100];
+//	FrameLayout frameLayout;
+//	int DynamicBtnSize =0;
+//	int width  = FrameLayout.LayoutParams.MATCH_PARENT;
+//	int height = FrameLayout.LayoutParams.WRAP_CONTENT;
+//	FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(width, height);
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		Button findAddressbtn = (Button)findViewById(R.id.searchBtn);
 		Button findCenterBtn = (Button)findViewById(R.id.searchAllMarkerBtn);
+
+		ImageButton addPeopleBtn = (ImageButton)findViewById(R.id.AddPeopleButton); // 인원추가 버튼
+		frameLayout = (FrameLayout)findViewById(R.id.InnerFrameLayout);
 
 		TMapView tMapView = new TMapView(this); // key값 설정을 위한 tmapView 생성
 		tMapView.setSKTMapApiKey( "f8e29016-57fd-4d05-b929-ebf16128f93f" ); // api key 설정
@@ -41,6 +53,18 @@ public class MainActivity extends AppCompatActivity {
 																											array_saving_class.final_location);
 		final_list.setAdapter(adapter); // 리스트뷰에 어답터 연결
 
+
+		// 주소찾기 버튼 이벤트처리
+		findAddressbtn.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				convertTodAddress(); // 주소 검색 다이얼로그 띄우는 메소드 호출
+			}
+
+		});
+
+		// 중간지점찾기 버튼 이벤트처리
 		findCenterBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -71,16 +95,28 @@ public class MainActivity extends AppCompatActivity {
 
 
 		});
-
-		findAddressbtn.setOnClickListener(new View.OnClickListener() {
-
+/*
+		// 인원추가버튼 이벤트 처리
+		addPeopleBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				convertTodAddress(); // 주소 검색 다이얼로그 띄우는 메소드 호출
+
+				DynamicAddBtn[DynamicBtnSize] = new Button(getApplicationContext());
+				if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+					DynamicAddBtn[DynamicBtnSize].setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.radiusblack));
+				} else {
+					DynamicAddBtn[DynamicBtnSize].setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.radiusblack));
+				}
+
+				frameLayout.addView(DynamicAddBtn[DynamicBtnSize]);
+				DynamicAddBtn[DynamicBtnSize].setLayoutParams(params);
+
+				DynamicBtnSize++;
+
 			}
 
 		});
-
+	*/
 	}
 
 	public void convertTodAddress() {

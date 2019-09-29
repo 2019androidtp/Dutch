@@ -6,9 +6,11 @@
     android:layout_height="match_parent">
 
     <FrameLayout
+        android:id="@+id/FrameLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
 
 
         <ImageView
@@ -186,7 +188,7 @@
 
 
         <ImageButton
-            android:id="@+id/AddButton"
+            android:id="@+id/AddPeopleButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="160dp"
@@ -207,6 +209,7 @@
             android:textColor="#ffffff"
             android:textSize="16sp"
             tools:text="인원 추가" />
+
 
         <TextView
             android:id="@+id/addressSetView"

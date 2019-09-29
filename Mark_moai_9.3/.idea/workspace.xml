@@ -9,7 +9,81 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8eab131c-d073-4622-89db-23048bbd38bd" name="Default Changelist" comment="" />
+    <list default="true" id="8eab131c-d073-4622-89db-23048bbd38bd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../2_10Combine/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../2_10Combine/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/libs/com.skt.Tmap_1.60.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/androidTest/java/com/example/apicollaboration/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/java/com/example/apicollaboration/Activity/ListViewActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/java/com/example/apicollaboration/ArraySavingClass/array_saving_class.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/java/com/example/apicollaboration/ListViewFunctionClass/CustomAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/java/com/example/apicollaboration/ListViewFunctionClass/CustomDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/java/com/example/apicollaboration/ListViewFunctionClass/ListViewAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/java/com/example/apicollaboration/ListViewFunctionClass/ListViewItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/drawable-hdpi/backwardarrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/drawable-hdpi/group6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/drawable-hdpi/no.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/drawable-ldpi/backwardarrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/drawable-ldpi/group6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/drawable-ldpi/no.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/drawable-mdpi/backwardarrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/drawable-mdpi/group6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/drawable-mdpi/no.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/drawable-xhdpi/backwardarrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/drawable-xhdpi/group6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/drawable-xhdpi/no.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/drawable-xxhdpi/backwardarrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/drawable-xxhdpi/group6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/drawable-xxhdpi/no.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/drawable-xxxhdpi/backwardarrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/drawable-xxxhdpi/group6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/drawable-xxxhdpi/no.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/drawable/ic_add_location_black_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/drawable/ic_assistant_photo_black_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/drawable/orangecorner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/drawable/pin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/drawable/radiusblack.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/font/nanumgothic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/layout/activity_list_view.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/values/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/app/src/test/java/com/example/apicollaboration/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10Combine/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2_10FixPolyLine/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../2_10FixPolyLine/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uhhyunjooXmlFix/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../uhhyunjooXmlFix/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uhhyunjooXmlFix/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../uhhyunjooXmlFix/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uhhyunjooXmlFix/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../uhhyunjooXmlFix/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uhhyunjooXmlFix/app/src/main/java/com/example/apicollaboration/Activity/AddressMarkActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../uhhyunjooXmlFix/app/src/main/java/com/example/apicollaboration/Activity/AddressMarkActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uhhyunjooXmlFix/app/src/main/java/com/example/apicollaboration/Activity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../uhhyunjooXmlFix/app/src/main/java/com/example/apicollaboration/Activity/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uhhyunjooXmlFix/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../uhhyunjooXmlFix/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,9 +133,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="240" />
-    <option name="y" value="365" />
-    <option name="width" value="1429" />
+    <option name="x" value="341" />
+    <option name="y" value="405" />
+    <option name="width" value="1430" />
     <option name="height" value="1104" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -70,14 +144,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Mark_moai_9.3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mark_moai_9.3" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="device.picker.selection" value="05157df5e10dd91a" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../2_10FixPolyLine" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Mark_moai_9.4" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
