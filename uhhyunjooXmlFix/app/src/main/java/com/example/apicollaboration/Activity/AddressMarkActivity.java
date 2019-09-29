@@ -8,7 +8,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -31,6 +30,7 @@ public class AddressMarkActivity extends AppCompatActivity {
 	Bitmap bitmap;
 	Bitmap temp;
 	TMapPoint centerP;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 
