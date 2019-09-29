@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <Button
+        style="@style/BlackTopWhite"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:contentDescription="BlackTop1"
+        android:enabled="false"
+        android:background="@color/black"
+        android:drawableStart="@drawable/logo36"
+        android:paddingStart="10dp"
+        android:gravity="left"
+
+        />
+
+    <Button
+        style="@style/BlackTopWhite"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:contentDescription="BlackTop2"
+        android:enabled="false"
+        android:background="@color/black"
+        android:paddingStart="10dp"
+        android:gravity="left"
+        android:text="중간 지점을 찾기 위한\n위치를 입력해주세요"
+        />
+
+    <!--추가하는거 5개-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+
+        >
+
+        <Button
+            android:id="@+id/nameA"
+            style="@style/ButtonWhite"
+            android:layout_width="72dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/radiusblack"
+            android:hint="이름 입력"
+            android:textColorHint="@color/white"
+
+            />
+
+        <Button
+            android:id="@+id/searchBtn"
+            style="@style/Search"
+            android:layout_width="160dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/radiuswhite"
+            android:text="주소 입력" />
+
+        <ImageButton
+            android:id="@+id/DeleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#00000000"
+            android:contentDescription="DeleteButton"
+            android:src="@drawable/delete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/nameB"
+            style="@style/ButtonWhite"
+            android:layout_width="72dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/radiusblack"
+            android:hint="이름 입력"
+            android:textColorHint="@color/white"
+
+            />
+
+        <Button
+            android:id="@+id/searchBtn2"
+            style="@style/Search"
+            android:layout_width="160dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/radiuswhite"
+            android:text="주소 입력" />
+
+        <ImageButton
+            android:id="@+id/DeleteButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#00000000"
+            android:contentDescription="DeleteButton2"
+            android:src="@drawable/delete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/nameC"
+            style="@style/ButtonWhite"
+            android:layout_width="72dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/radiusblack"
+            android:hint="이름 입력"
+            android:textColorHint="@color/white"
+
+            />
+
+        <Button
+            android:id="@+id/searchBtn3"
+            style="@style/Search"
+            android:layout_width="160dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/radiuswhite"
+            android:text="주소 입력" />
+
+        <ImageButton
+            android:id="@+id/DeleteButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#00000000"
+            android:contentDescription="DeleteButton3"
+            android:src="@drawable/delete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/nameD"
+            style="@style/ButtonWhite"
+            android:layout_width="72dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/radiusblack"
+            android:hint="이름 입력"
+            android:textColorHint="@color/white"
+
+            />
+
+        <Button
+            android:id="@+id/searchBtn4"
+            style="@style/Search"
+            android:layout_width="160dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/radiuswhite"
+            android:text="주소 입력" />
+
+        <ImageButton
+            android:id="@+id/DeleteButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#00000000"
+            android:contentDescription="DeleteButton4"
+            android:src="@drawable/delete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/nameE"
+            style="@style/ButtonWhite"
+            android:layout_width="72dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/radiusblack"
+            android:hint="이름 입력"
+            android:textColorHint="@color/white"
+
+            />
+
+        <Button
+            android:id="@+id/searchBtn5"
+            style="@style/Search"
+            android:layout_width="160dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/radiuswhite"
+            android:text="주소 입력" />
+
+        <ImageButton
+            android:id="@+id/DeleteButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#00000000"
+            android:contentDescription="DeleteButton5"
+            android:src="@drawable/delete" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/AddButton"
+        style="@style/ButtonWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/addpeople"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="10dp"
+        android:text="인원 추가" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/searchAllMarkerBtn"
+            style="@style/ButtonWhiteBig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/rectangleorange"
+            android:text="중간지점 찾기"
+            />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

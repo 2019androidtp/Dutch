@@ -14,11 +14,10 @@
         android:layout_height="match_parent"
         android:background="@android:color/white"
         android:layout_weight="1">
-
     </LinearLayout>
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp">
+        android:layout_height="120dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -28,14 +27,21 @@
                 android:id="@+id/nameOfLocation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20pt" />
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                style="@style/LocationStyle"
+                />
 
             <TextView
                 android:id="@+id/nameOfAddress"
                 android:layout_width="192dp"
                 android:layout_height="68dp"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+                style="@style/AddressStyle"
                 android:layout_below="@id/nameOfLocation"
-                android:textSize="10pt" />
+                />
 
         </RelativeLayout>
 
@@ -46,26 +52,15 @@
 
             <Button
                 android:id="@+id/yesBtn"
-                android:layout_width="wrap_content"
+                style="@style/ButtonWhiteBig"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_marginRight="18dp"
-                android:layout_marginBottom="20dp"
-                android:layout_toLeftOf="@id/noBtn"
-                android:text="Yes" />
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/rectangleblack"
+                android:text="출발 위치로 설정" />
 
-            <Button
-                android:id="@+id/noBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
 
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="14dp"
-                android:layout_marginRight="14dp"
-                android:layout_marginBottom="20dp"
-                android:text="No" />
         </RelativeLayout>
     </FrameLayout>
 </LinearLayout>
