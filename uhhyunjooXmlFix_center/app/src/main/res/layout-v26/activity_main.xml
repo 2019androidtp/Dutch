@@ -8,8 +8,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/framelayout">
+        android:orientation="vertical">
 
 
         <ImageView
@@ -40,7 +39,7 @@
             tools:text="중간 지점을 찾기 위한
                 위치를 입력해주세요" />
 
-        <Button
+        <EditText
             android:id="@+id/nameA"
             style="@style/ButtonWhite"
             android:layout_width="72dp"
@@ -49,11 +48,10 @@
             android:layout_marginLeft="24dp"
             android:layout_marginTop="250dp"
             android:background="@drawable/radiusblack"
-            android:textColorHint="@color/white"
-            android:hint ="이름 입력"
-            />
+            android:text="이름 입력"
+            android:textColor="@color/white" />
 
-        <Button
+        <EditText
             android:id="@+id/nameB"
             style="@style/ButtonWhite"
             android:layout_width="72dp"
@@ -62,11 +60,10 @@
             android:layout_marginLeft="24dp"
             android:layout_marginTop="300dp"
             android:background="@drawable/radiusblack"
-            android:textColorHint="@color/white"
-            android:hint ="이름 입력"
-            />
+            android:text="이름 입력"
+            android:textColor="@color/white" />
 
-        <Button
+        <EditText
             android:id="@+id/nameC"
             style="@style/ButtonWhite"
             android:layout_width="72dp"
@@ -75,9 +72,8 @@
             android:layout_marginLeft="24dp"
             android:layout_marginTop="350dp"
             android:background="@drawable/radiusblack"
-            android:textColorHint="@color/white"
-            android:hint ="이름 입력"
-            />
+            android:text="이름 입력"
+            android:textColor="@color/white" />
 
 
 
