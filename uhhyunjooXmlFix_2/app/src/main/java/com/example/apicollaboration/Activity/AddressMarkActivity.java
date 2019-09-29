@@ -26,7 +26,7 @@ public class AddressMarkActivity extends AppCompatActivity {
 	TextView address_textView;
 	TextView name_textView;
 	Button yesBtn;
-	Button noBtn;
+	//Button noBtn;
 	Bitmap bitmap;
 	Bitmap temp;
 	TMapPoint centerP;
@@ -83,7 +83,7 @@ public class AddressMarkActivity extends AppCompatActivity {
 		}
 
 		yesBtn = (Button) findViewById(R.id.yesBtn);
-		noBtn = (Button) findViewById(R.id.noBtn);
+		//noBtn = (Button) findViewById(R.id.noBtn);
 
 		yesBtn.setOnClickListener(new Button.OnClickListener() {
 			@Override
@@ -95,6 +95,7 @@ public class AddressMarkActivity extends AppCompatActivity {
 			}
 		});
 
+		/*
 		noBtn.setOnClickListener(new Button.OnClickListener() {
 			@Override
 			public void onClick(View view) {
@@ -104,7 +105,9 @@ public class AddressMarkActivity extends AppCompatActivity {
 				startActivity(goToMain);
 			}
 		});
+		*/
 		// 중간지점 체크 후 테스트를 위해 yes no 버튼을 빼놨습니다. 수정해야합니다.
+		// no 버튼 주석 처리 해놨습니다.
 
 	}
 

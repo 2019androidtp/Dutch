@@ -1,5 +1,34 @@
 <resources>
 
+
+    <style name="ButtonWhiteBig">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="LocationStyle">
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="AddressStyle">
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:textColor">@color/greyish</item>
+    </style>
+
+    <style name ="BlackTopWhite">
+
+        <item name="android:textSize">26sp</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
@@ -19,7 +48,7 @@
 
 <!-- font 에도 있는 style-->
     <style name="ButtonWhite">
-        <item name="android:gravity">center_horizontal</item>
+        <item name="android:gravity">center</item>
         <item name="android:textSize">13.3sp</item>
         <item name="android:lineSpacingExtra">2sp</item>
         <item name="android:textColor">#ffffff</item>

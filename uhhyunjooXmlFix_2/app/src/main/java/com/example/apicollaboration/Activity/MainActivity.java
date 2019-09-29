@@ -35,11 +35,11 @@ public class MainActivity extends AppCompatActivity {
 		TMapView tMapView = new TMapView(this); // key값 설정을 위한 tmapView 생성
 		tMapView.setSKTMapApiKey( "f8e29016-57fd-4d05-b929-ebf16128f93f" ); // api key 설정
 
-		final ListView final_list;
-		final_list = (ListView) findViewById(R.id.Addresslistview);
-		ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,
-																											array_saving_class.final_location);
-		final_list.setAdapter(adapter); // 리스트뷰에 어답터 연결
+		//final ListView final_list;
+		//final_list = (ListView) findViewById(R.id.Addresslistview);
+
+		//ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,array_saving_class.final_location);
+		//final_list.setAdapter(adapter); // 리스트뷰에 어답터 연결
 
 		findCenterBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
@@ -80,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
 			}
 
 		});
+
 
 	}
 
