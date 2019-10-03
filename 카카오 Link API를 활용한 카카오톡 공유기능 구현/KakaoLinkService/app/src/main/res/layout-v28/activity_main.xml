@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.CenterActivity">
+
+    <LinearLayout
+        android:id="@+id/mapviewCenter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:orientation="vertical"></LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            >
+
+            <ImageView
+                android:id="@+id/first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:src="@drawable/logo36" />
+
+            <TextView
+                android:id="@+id/second"
+                style="@style/BlackTopWhite"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/first"
+                android:paddingLeft="20dp"
+                android:paddingTop="60dp"
+                android:text="중간 지점을 찾기 위한\n위치를 입력해주세요" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="210dp"
+            android:background="@color/white"
+            >
+
+
+            <Button
+                android:id="@+id/nameA"
+                style="@style/ButtonWhite"
+                android:layout_width="72dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radiusblack"
+                android:hint="A"
+                android:textColorHint="@color/white"
+
+
+                />
+
+            <Button
+                android:id="@+id/searchBtn1"
+                style="@style/Search"
+                android:layout_width="236dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/nameA"
+                android:background="@drawable/radiuswhite"
+                android:text="주소를 입력해주세요!"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:gravity="left|center_vertical"
+
+                />
+
+
+            <Button
+                android:id="@+id/nameB"
+                style="@style/ButtonWhite"
+                android:layout_width="72dp"
+                android:layout_height="36dp"
+                android:layout_below="@id/nameA"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radiusblack"
+                android:hint="B"
+                android:textColorHint="@color/white"
+
+                />
+
+            <Button
+                android:id="@+id/searchBtn2"
+                style="@style/Search"
+                android:layout_width="236dp"
+                android:layout_height="36dp"
+                android:layout_below="@id/searchBtn1"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/nameB"
+                android:background="@drawable/radiuswhite"
+                android:text="주소를 입력해주세요!"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:gravity="left|center_vertical"
+                />
+
+
+            <Button
+                android:id="@+id/nameC"
+                style="@style/ButtonWhite"
+                android:layout_width="72dp"
+                android:layout_height="36dp"
+                android:layout_below="@id/nameB"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radiusblack"
+                android:hint="C"
+                android:textColorHint="@color/white"
+
+                />
+
+            <Button
+                android:id="@+id/searchBtn3"
+                style="@style/Search"
+                android:layout_width="236dp"
+                android:layout_height="36dp"
+                android:layout_below="@id/searchBtn2"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/nameC"
+                android:background="@drawable/radiuswhite"
+                android:text="주소를 입력해주세요!"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:gravity="left|center_vertical"
+                />
+
+
+            <Button
+                android:id="@+id/nameD"
+                style="@style/ButtonWhite"
+                android:layout_width="72dp"
+                android:layout_height="36dp"
+                android:layout_below="@id/nameC"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radiusblack"
+                android:hint="D"
+                android:textColorHint="@color/white"
+
+                />
+
+            <Button
+                android:id="@+id/searchBtn4"
+                style="@style/Search"
+                android:layout_width="236dp"
+                android:layout_height="36dp"
+                android:layout_below="@id/searchBtn3"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/nameD"
+                android:background="@drawable/radiuswhite"
+                android:text="주소를 입력해주세요!"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:gravity="left|center_vertical"
+                />
+
+
+            <Button
+                android:id="@+id/nameE"
+                style="@style/ButtonWhite"
+                android:layout_width="72dp"
+                android:layout_height="36dp"
+                android:layout_below="@id/nameD"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radiusblack"
+                android:hint="E"
+                android:textColorHint="@color/white"
+
+                />
+
+            <Button
+                android:id="@+id/searchBtn5"
+                style="@style/Search"
+                android:layout_width="236dp"
+                android:layout_height="36dp"
+                android:layout_below="@id/searchBtn4"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/nameE"
+                android:background="@drawable/radiuswhite"
+                android:text="주소를 입력해주세요!"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:gravity="left|center_vertical"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/underLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/searchAllMarkerBtn"
+                style="@style/ButtonWhiteBig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/rectangleorange"
+                android:padding="20dp"
+                android:text="중간지점 찾기" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>
