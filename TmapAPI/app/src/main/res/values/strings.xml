@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">GoogleAPI</string>
-    <string name="title_activity_sub">SubActivity</string>
-    <string name="title_activity_address_list_view">AddressListViewActivity</string>
-    <string name="title_activity_list_view_adapter">ListViewAdapter</string>
-</resources>
