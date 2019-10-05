@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <TextView
+            android:id="@+id/list01"
+            style="@style/BlackTopWhite"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="60dp"
+            android:text="당신이 찾은 중간 지점을\n친구들과 공유하세요"
+            android:background="@android:color/black"
+            />
+
+
+        <ListView
+            android:id="@+id/infraListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list01"
+            >
+        </ListView>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

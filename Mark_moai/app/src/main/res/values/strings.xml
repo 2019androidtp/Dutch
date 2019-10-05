@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">ApiCollaboration</string>
-    <string name="title_activity_list_view">ListViewActivity</string>
-    <string name="title_activity_daum_search">DaumSearchActivity</string>
-</resources>
