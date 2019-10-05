@@ -1,6 +1,9 @@
 # 2019androidTP  
 ![project_start_date](https://img.shields.io/badge/Project%20Start%20Date-2019--07--25-informational.svg)  
 
+[앱 소개 영상](https://youtu.be/vk3_f0Nti6o)
+
+
 ***
 <2019androidTeamProject - Interface Programming Exhibition>
 ***
@@ -15,10 +18,10 @@ JAVA에 대한 이해를 위한 기초적인 스터디와 주마다 정기적으
 [대회 사이트](https://www.oss.kr/dev_competition/) - 9월 15일 참가접수 마감 / 10월 6일까지 프로젝트 제출
 
 # Member
-### 팀장 강근우 - 개발, 기획
-##### 팀원 주이식 - 개발, Github 관리 
-##### 팀원 이현주 - 개발, 서기
-##### 팀원 이주현 - UI/UX 디자인
+### 팀장 강근우 - 기획, 주요 알고리즘 개발
+##### 팀원 주이식 - PM(Project Manager), 핵심 기능 개발, GitHub 관리
+##### 팀원 이현주 - 프론트엔드 개발
+##### 팀원 이주현 - UI/UX 디자인 총괄
 
 
 
