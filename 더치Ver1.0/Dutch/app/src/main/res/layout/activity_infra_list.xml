@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/list01"
+        style="@style/BlackTopWhite"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@color/black"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="72dp"
+        android:text="당신이 찾은 중간 지점을\n친구들과 공유하세요" />
+
+    <RelativeLayout
+        android:id="@+id/InfraRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity ="center"
+        android:background="@drawable/greywhite"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/buttonList01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+
+
+            <ImageButton
+                android:id="@+id/transBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:padding="4dp"
+                android:src="@drawable/button_change_trans" />
+
+            <ImageButton
+                android:id="@+id/cultureBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:padding="4dp"
+                android:src="@drawable/button_change_culture"
+
+                />
+
+            <ImageButton
+                android:id="@+id/cafeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:padding="4dp"
+                android:src="@drawable/button_change_cafe" />
+
+            <ImageButton
+                android:id="@+id/foodBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:padding="4dp"
+                android:src="@drawable/button_change_food" />
+
+        </LinearLayout>
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_below="@+id/buttonList01"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:lineSpacingExtra="6sp"-->
+            <!--android:paddingTop="160dp"-->
+            <!--android:textColor="@color/greyish"-->
+            <!--android:textSize="16sp"-->
+            <!--tools:text="분류된 카테고리를 탭하면\n중간 지점 주변 시설들을 추천해드립니다." />-->
+
+        <ListView
+            android:id="@+id/transListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/buttonList01"
+
+            />
+
+        <ListView
+            android:id="@+id/cafeListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/buttonList01"
+            />
+
+        <ListView
+            android:id="@+id/foodListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/buttonList01"
+            />
+
+        <ListView
+            android:id="@+id/cultureListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/buttonList01"
+            />
+
+
+    </RelativeLayout>
+</LinearLayout>

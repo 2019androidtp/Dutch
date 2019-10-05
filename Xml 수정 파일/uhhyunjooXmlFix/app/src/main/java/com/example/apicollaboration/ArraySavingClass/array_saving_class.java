@@ -18,4 +18,5 @@ public class array_saving_class {
     public static double tempX;
     public static double tempY;
     public static boolean centerOfIt = false;
+
 }

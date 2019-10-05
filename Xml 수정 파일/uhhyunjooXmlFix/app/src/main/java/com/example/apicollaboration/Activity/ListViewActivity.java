@@ -19,6 +19,7 @@ import static com.example.apicollaboration.Activity.MainActivity.POILon;
 import static com.example.apicollaboration.Activity.MainActivity.POIResult;
 import static com.example.apicollaboration.Activity.MainActivity.POIitemSize;
 import static com.example.apicollaboration.ArraySavingClass.array_saving_class.POIName;
+import static com.example.apicollaboration.ArraySavingClass.array_saving_class.centerOfIt;
 
 public class ListViewActivity extends AppCompatActivity {
 	int size = 0;
@@ -48,6 +49,7 @@ public class ListViewActivity extends AppCompatActivity {
 				POIName[size] = POIResult[position];
 				size++;
 				Intent MarkIntent = new Intent(getApplicationContext(), AddressMarkActivity.class);
+				centerOfIt=true;
 				startActivity(MarkIntent);
 
 			}
