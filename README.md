@@ -1,5 +1,7 @@
 # 2019androidTP  
-![project_start_date](https://img.shields.io/badge/Project%20Start%20Date-2019--07--25-informational.svg)  
+![project_start_date](https://img.shields.io/badge/Project%20Start%20Date-2019--07--25-informational.svg)
+![Version Release Date](https://img.shields.io/badge/Version%201.0%20Release%20Date-2019--10--06-blue)
+![Version](https://img.shields.io/badge/Version-1.0-red)
 
 [앱 소개 영상](https://youtu.be/vk3_f0Nti6o)
 
