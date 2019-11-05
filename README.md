@@ -3,7 +3,8 @@
 ![Version Release Date](https://img.shields.io/badge/Version%201.0%20Release%20Date-2019--10--06-blue)
 ![Version](https://img.shields.io/badge/Version-1.0-red)
 
-[앱 소개 영상](https://youtu.be/vk3_f0Nti6o)
+[앱 소개 영상](https://youtu.be/vk3_f0Nti6o)  
+[공식 블로그](https://2019androidtp.github.io/) 
 
 <a href="https://play.google.com/store/apps/details?id=com.dutch2019">
   <img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
