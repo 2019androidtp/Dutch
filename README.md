@@ -1,8 +1,8 @@
 # 2019androidTP  
 ![project_start_date](https://img.shields.io/badge/Project%20Start%20Date-2019--07--25-informational.svg)
 ![Version Release Date](https://img.shields.io/badge/Version%201.0%20Release%20Date-2019--10--06-blue)
-![Version](https://img.shields.io/badge/Version-1.0-red)
-
+![Version](https://img.shields.io/badge/Version-1.2-red)  
+[최신버전(Kotlin)](https://github.com/jkey20/Kotlin-Dutch)  
 [앱 소개 영상](https://youtu.be/vk3_f0Nti6o)  
 [공식 블로그](https://2019androidtp.github.io/) 
 
